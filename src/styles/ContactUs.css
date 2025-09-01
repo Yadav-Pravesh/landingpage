@@ -1,0 +1,559 @@
+/* ========== Base Styles (आपका दिया हुआ CSS) ========== */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cu-page {
+  font-family: Arial, sans-serif;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Banner */
+.cu-banner {
+  width: 100%;
+  height: 332px;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.51) 100%), url("../assets/about-banner2.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cu-banner-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 50px;
+  margin-left: 75px;
+}
+
+.cu-banner-text h1 {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.cu-banner-text p {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 700px;
+  margin-top: 0;
+}
+
+/* Talk Section */
+.cu-talk-section {
+  padding: 10px;
+  margin-top: 30px;
+  max-width: 85%;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.cu-talk-section h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.cu-talk-desc {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 1187px;
+  margin-top: 0;
+}
+
+.cu-card-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Help Card */
+.cu-help-card {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.51) 100%), url("../assets/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.cu-help-title {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cu-help-text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  width: 392px;
+}
+
+.cu-help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cu-form button.cu-submit-button {
+  align-self: flex-end;
+}
+
+.cu-help-img {
+  width: 125px;
+  height: 125px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.cu-row-flex {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 40px; /* adjust spacing between phone and email */
+  margin-bottom: 20px;
+}
+
+.cu-contact-block {
+  min-width: 200px; /* optional: controls width of each block */
+}
+
+.cu-contact-block-item {
+  margin-left: 50px;
+}
+
+.cu-help-button {
+  display: flex;
+  width: 138px;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #F86F03;
+  color: rgba(255, 255, 255, 1);
+}
+
+.cu-contact-info .cu-contact-item {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cu-contact-info .cu-contact-value {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cu-icon {
+  margin-right: 8px;
+}
+
+.cu-follow-title {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.cu-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  margin-top: 0;
+}
+
+.cu-icons svg {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Form Card */
+.cu-form-card {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.51) 100%), url("../assets/Rectangle1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.cu-form-title {
+  color: #FFF;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cu-form input,
+.cu-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* VERY IMPORTANT for consistent sizing */
+}
+
+.cu-form textarea {
+  display: flex;
+  height: 100px;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  resize: vertical;
+}
+
+.cu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.cu-form button {
+  align-self: flex-end;
+  margin-right: 0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  width: 115px;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #F86F03;
+}
+
+/* Map */
+.cu-map-container {
+  width: 100%;
+  max-width: 1120px; /* Keeps desktop layout */
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintains proportion */
+  margin: 0 auto; /* Centers on large screens */
+}
+
+.cu-map-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* FAQ */
+.faq-section {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.faq-header {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 14px;
+  margin-left: 100px;
+}
+
+.faq-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.faq-subtext {
+  width: 1187px;
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #EBEBEB;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.faq-list .faq-item:nth-child(1) {
+  width: 500px;
+}
+
+.faq-list .faq-item:nth-child(2) {
+  width: 500px;
+}
+
+.faq-list .faq-item:nth-child(3) {
+  width: 550px;
+}
+
+.faq-list .faq-item:nth-child(4) {
+  width: 500px;
+}
+
+.faq-list .faq-item:nth-child(5) {
+  width: 600px;
+}
+
+.faq-icon {
+  font-size: 14px;
+}
+
+/* ========== Responsive Fixes and Improvements ========== */
+
+/* Mobile (max-width 480px) */
+@media (max-width: 480px) {
+  /* Banner */
+  .cu-banner {
+    height: auto;
+  }
+  .cu-banner-overlay {
+    padding: 20px 15px !important;
+    margin-left: 0 !important;
+    justify-content: center !important;
+  }
+  .cu-banner-text h1 {
+    font-size: 28px !important;
+    text-align: center;
+  }
+  .cu-banner-text p {
+    font-size: 14px !important;
+    max-width: 100% !important;
+    text-align: center;
+  }
+  
+  /* Talk Section */
+  .cu-talk-section {
+    max-width: 100% !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    padding: 15px !important;
+  }
+  .cu-talk-desc {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  /* Card Wrapper */
+  .cu-card-wrapper {
+    justify-content: center !important;
+  }
+  .cu-help-card {
+    min-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .cu-help-text {
+    width: 100% !important;
+  }
+  .cu-form-card {
+    min-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Blocks */
+  .cu-row-flex {
+    justify-content: center !important;
+  }
+  .cu-contact-block {
+    min-width: auto !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .cu-contact-block-item {
+    margin-left: 0 !important;
+  }
+
+  /* Map */
+  .cu-map-container {
+    margin: 20px 15px !important;
+  }
+
+  /* FAQ */
+  .faq-header {
+    margin-left: 0 !important;
+    padding: 10px 15px !important;
+  }
+  .faq-subtext {
+    width: 100% !important;
+  }
+  .faq-list .faq-item {
+    width: 100% !important;
+  }
+}
+
+/* Tablet (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .cu-banner {
+    height: auto;
+  }
+  .cu-banner-overlay {
+    padding: 30px 30px !important;
+    margin-left: 0 !important;
+    justify-content: center !important;
+  }
+  .cu-banner-text h1 {
+    font-size: 42px !important;
+    text-align: center;
+  }
+  .cu-banner-text p {
+    font-size: 16px !important;
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+  .cu-talk-section {
+    max-width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 10px !important;
+  }
+
+  .cu-talk-desc {
+    width: 100% !important;
+  }
+
+  .cu-card-wrapper {
+    justify-content: center !important;
+  }
+
+  .cu-help-card,
+  .cu-form-card {
+    min-width: 45% !important;
+    width: 45% !important;
+  }
+
+  .cu-row-flex {
+    justify-content: center !important;
+  }
+
+  .cu-contact-block {
+    min-width: auto !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .cu-map-container {
+    margin: 20px auto !important;
+  }
+
+  .faq-header {
+    margin-left: 0 !important;
+  }
+
+  .faq-list .faq-item {
+    width: 100% !important;
+  }
+}
+
+/* Large tablets / small desktops (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cu-banner {
+    height: 332px;
+  }
+  .cu-banner-overlay {
+    padding: 0 50px !important;
+    margin-left: 75px !important;
+    justify-content: flex-start !important;
+  }
+  .cu-banner-text h1 {
+    font-size: 56px !important;
+    text-align: left;
+  }
+  .cu-banner-text p {
+    font-size: 18px !important;
+    max-width: 700px !important;
+    text-align: left;
+  }
+
+  .cu-talk-section,
+  .cu-map-container,
+  .faq-section {
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .faq-list .faq-item {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,329 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #F6F7FF;
+}
+
+.mb-page {
+  font-family: Arial, sans-serif;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* ✅ Banner Section */
+.mb-banner {
+  width: 100%;
+  height: 332px;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  box-sizing: border-box;
+
+  /* ✅ Gradient + Background Image */
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.51) 100%),
+              url("../assets/about-banner2.png");
+  background-position: center;  
+  background-repeat: no-repeat;      
+  background-size: cover;      
+  background-attachment: scroll;  
+}
+
+.mb-banner-content {
+  color: #fff;
+  text-align: left;
+  max-width: 90%;
+  line-height: 1.4;
+  margin-left: 70px;
+}
+
+.mb-banner-content h1 {
+  color: #FFF;
+  font-family: Roboto, sans-serif;
+  font-size: 62px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.mb-banner-content p {
+  line-height: 1.6;
+  max-width: 700px;
+  margin-top: 0;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* ✅ Header Section */
+.mb-header {
+  margin-top: 50px;
+  width: calc(100% - 240px);
+  margin-left: 120px;
+  margin-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.mb-header-text {
+    flex: 1;
+  padding-right: 120px;
+}
+
+.mb-header-text h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mb-header-text p {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Roboto;
+  font-size: 18px;
+  max-width: 800px;
+  font-weight: 400;
+}
+
+/* ✅ News Buttons */
+.mb-all-news-buttons {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: none; /* Firefox */
+}
+
+.mb-all-news-buttons::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.mb-all-news-buttons.dragging {
+  cursor: grabbing;
+}
+
+.mb-news-buttons {
+  height: 50px;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 80px;
+  background: rgba(232, 232, 232, 1);
+  display: flex;
+  border: none;
+  white-space: nowrap;
+}
+
+.mb-news-buttons.active {
+  background: rgba(82, 95, 225, 0.78);
+  color: white;
+}
+
+/* ✅ Doctors Grid */
+.mb-doctors-grid {
+  margin-top: 36px;
+  width: calc(100% - 240px);
+  margin-left: 120px;
+  margin-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.mb-doctor-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 18px;
+  background: rgba(82, 95, 225, 0.10);
+}
+
+.mb-doctor-img {
+  width: 100%;
+  object-fit: cover;
+  height: 249px;
+  border-radius: 5px;
+}
+
+.mb-doctor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mb-doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mb-view-profile {
+  color: rgba(82, 95, 225, 1);
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.mb-view-profile:hover {
+  color: #2a4de3;
+}
+
+.mb-doctor-name {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.mb-doctor-specialty {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.mb-doctor-address {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.mb-doctor-website {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mb-doctor-website-text {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.mb-doctor-website-text strong {
+  color: #000;
+}
+
+/* ✅ Buttons Section */
+.mb-card-buttons {
+  display: flex;
+  gap: 15px;
+  padding: 12px;
+  flex-wrap: nowrap;
+}
+
+.mb-btn-appointment {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 14px;
+  background: #F86F03;
+}
+
+.mb-btn-profile {
+  color: #F86F03;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  background: rgba(82, 95, 225, 0.10);
+  border: 2px solid;
+}
+
+.mb-btn-profile:hover {
+  cursor: pointer;
+  background-color: #F86F03;
+  color: white;
+}
+
+/* ✅ RESPONSIVE FIXES */
+@media (max-width: 1024px) {
+  .mb-doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  /* Banner center align */
+  .mb-banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .mb-banner-content {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Header center align */
+  .mb-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .mb-header-text {
+    flex: unset; /* desktop flex ka effect hata do */
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Scroll buttons with proper gap and scrollbar */
+  .mb-all-news-buttons {
+    justify-content: flex-start;
+    margin: 10px auto 20px auto; /* upar aur niche gap */
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: thin; /* Firefox */
+  }
+
+  .mb-all-news-buttons::-webkit-scrollbar {
+    display: block; /* Chrome/Safari/Edge */
+    height: 6px;
+  }
+
+  .mb-all-news-buttons::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+
+  /* Grid single column */
+  .mb-doctors-grid {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .mb-doctor-card {
+    text-align: center;
+  }
+
+  .mb-doctor-info {
+    align-items: center;
+  }
+
+  .mb-doctor-website {
+    justify-content: center;
+  }
+}
